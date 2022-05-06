@@ -1,0 +1,68 @@
+$gelb:rgb(244, 201, 85);
+$blau: rgb(135, 239, 251);
+$rot: rgb(235, 106, 101);
+$lila: rgb(174, 84, 242);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(58deg, $blau 12.50%, $gelb 12.50%, $gelb 25%, $rot 25%, $rot 37.50%, $lila 37.50%, $lila 50%, $blau 50%, $blau 62.50%, $gelb 62.50%, $gelb 75%, $rot 75%, $rot 87.50%, $lila 87.50%, $lila 100%);
+    background-size: 566.01px 905.80px;
+}
+
+nav {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 15vh 0;
+
+    h1 {
+        color: white;
+        font-size: 15rem;
+    }
+
+    h2 {
+        color: white;
+        font-size: 3rem;
+    }
+
+    div {
+        position: absolute;
+        background-color: $gelb;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6rem;
+        top: 10vh;
+        right: 10vw;
+
+    }
+}
+
+footer {
+    font-size: 2rem;
+    text-align: right;
+    padding: 2.5vh 5vw 0 0;
+
+    i {
+        margin: 0 0.5vw;
+    }
+}
